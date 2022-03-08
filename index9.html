@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Creating HTML5 and CSS3 Form Elements</title>
+    <style>
+        form{
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: #f1f1f1;
+            width: 600px;
+            margin: 0 auto;
+            padding: 20px;
+            box-sizing: border-box;
+        }
+
+        .form-group{
+            margin: 25px 0;
+        }
+
+        .form-group label{
+            font-size: 18px;
+        }
+
+        .form-group input{
+            width: 100%;
+            padding: 10px;
+            box-sizing: border-box;
+            display: block;
+            box-shadow:  inset 0px 0px 10px silver, 0 0 0 lightgreen;
+            border: 1px solid gray;
+            outline: none;
+            margin-top: 5px;
+            transition: box-shadow 1s;
+        }
+        .form-group input:focus{
+            box-shadow:  inset 0 0 0 silver, 0 0 10px lightgreen;
+        }
+    </style>
+</head>
+<body>
+    <form action="">
+        <h2>The Form</h2><hr>
+
+        <div class="form-group">
+            <label for="user-name">User Name *: </label>
+            <input type="text" id="user-name" placeholder="Insert your name" required>
+        </div>
+
+        <div class="form-group">
+            <label for="user-name">Password *: </label>
+            <input type="password" id="user-name" required>
+        </div>
+
+        <div class="form-group">
+            <label for="user-name">E-mail *: </label>
+            <input type="email" id="user-name" autofocus required>
+        </div>
+
+        <div class="form-group">
+            <label for="user-name">Contact Number: </label>
+            <input type="number" id="user-name">
+        </div>
+
+        <div class="form-group">
+            <label for="user-name">Select Your Country: </label>
+            <input type="text" id="user-name">
+        </div>
+
+        <div class="form-group">
+            <label for="user-name">Birthday: </label>
+            <input type="date" id="user-name">
+        </div>
+
+        <div class="form-group">
+            <label for="user-name">Week: </label>
+            <input type="week" id="user-name">
+        </div>
+
+        <div class="form-group">
+            <label for="user-name">Month: </label>: </label>
+            <input type="month" id="user-name">
+        </div>
+
+        <div class="form-group">
+            <label for="user-name">Time: </label>
+            <input type="time" id="user-name">
+        </div>
+
+        <div class="form-group">
+            <label for="user-name">Range: </label>
+            <input type="range" id="user-name">
+        </div>
+
+        <input type="range" value="8" step="3" min="1" max="10" id="user-name">
+
+        <div class="form-group">
+            <label for="user-name">Select Color: </label>
+            <input type="color" id="user-name">
+        </div>
+
+        <input type="color" id="user-name">
+
+        <div class="form-group">
+            <label for="user-name">Your Webpage URL: </label>
+            <input type="url" id="user-name">
+        </div>
+
+        <div class="form-group">
+            <label for="user-name">Select Your Country: </label>
+            <input list="country">
+            <datalist id="country">
+                <option value="india">India</option>
+                <option value="usa">USA</option>
+                <option value="rush">Rush</option>
+                <option value="brasil">Brasil</option>
+                <option value="srilanka">Srilanka</option>
+            </datalist>
+        </div>
+
+        <div class="form-group">
+            <input type="submit" value="Submit Form">
+        </div>
+    </form>
+</body>
+</html>

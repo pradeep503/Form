@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style18.css">
+    <title>A Beautiful Form</title>
+</head>
+<body>
+    <form action="">
+        <table>
+            <h1>Fill the Form</h1><hr>
+            <tr>
+                <td><label for="user">User name: </label></td>
+                <td><input type="text" name="user" id="user"></td>
+            </tr>
+            <tr>
+                <td><label for="pass">Password: </label></td>
+                <td><input type="password" name="pass" id="pass"></td>
+            </tr>
+            <tr>
+                <td><label>Gender: </label></td>
+                <td>Male: <input type="radio" name="gender" value="male"> <br> Female: <input type="radio" name="gender" value="female"><br><br></td>
+            </tr>
+            <tr>
+                <td><label>Skills: </label></td>
+                <td>HTML: <input type="checkbox" value="html" name="html"> <br> CSS: <input type="checkbox" value="css" name="css"> <br> PHP: <input type="checkbox" value="php" name="php"> <br> JavaScript: <input type="checkbox" value="javascript" name="javascript"></td>
+            </tr>
+            <tr>
+                <td><label for="country">Select your country: </label></td>
+                <td>
+                    <select name="country" id="country">
+                        <option value="">Select your country</option>
+                        <option value="india">India</option>
+                        <option value="america">America</option>
+                        <option value="rush">Rush</option>
+                        <option value="japan">Japan</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td><label for="comments">Comments</label></td>
+                <td><textarea name="" id="" cols="50" rows="5"></textarea></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td>
+                    <input type="submit" value="Click to Submit" name="submit_form">
+                </td>
+            </tr>
+        </table>
+    </form>
+</body>
+</html>
